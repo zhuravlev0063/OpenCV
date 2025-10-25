@@ -1,7 +1,7 @@
 import cv2
 
 # URL вашей камеры. Замените на тот, который показало приложение.
-url = 'http://10.248.165.23:8080/video'
+url = 'http://10.115.153.113:8080/video'
 cap = cv2.VideoCapture(url)
 
 while True:

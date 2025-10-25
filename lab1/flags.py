@@ -1,7 +1,7 @@
 import cv2
 
 # Путь к изображению (замените на свой)
-img_path = 'image.jpg'
+img_path = '../image.jpg'
 
 # Тестируем три флага для чтения
 flags_read = [cv2.IMREAD_COLOR, cv2.IMREAD_GRAYSCALE, cv2.IMREAD_UNCHANGED]

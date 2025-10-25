@@ -4,7 +4,7 @@ cap = cv2.VideoCapture(0)
 
 # Определяем кодек и создаем VideoWriter
 fourcc = cv2.VideoWriter_fourcc(*'XVID')
-out = cv2.VideoWriter('webcam_output.avi', fourcc, 20.0, (640, 480)) # FPS и размер должны соответствовать источнику
+out = cv2.VideoWriter('../webcam_output.avi', fourcc, 20.0, (640, 480)) # FPS и размер должны соответствовать источнику
 
 while cap.isOpened():
     ret, frame = cap.read()

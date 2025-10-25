@@ -1,7 +1,7 @@
 import cv2
 
 # Источник видео (файл или камера)
-cap = cv2.VideoCapture('video1.mp4')
+cap = cv2.VideoCapture('../video1.mp4')
 
 # Получаем параметры исходного видео
 fps = cap.get(cv2.CAP_PROP_FPS)
@@ -10,7 +10,7 @@ height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
 
 # Определяем кодек и создаем объект VideoWriter
 fourcc = cv2.VideoWriter_fourcc(*'XVID')  # Пример кодека
-out = cv2.VideoWriter('output_video.avi', fourcc, fps, (width, height))
+out = cv2.VideoWriter('../output_video.avi', fourcc, fps, (width, height))
 
 while cap.isOpened():
     ret, frame = cap.read()

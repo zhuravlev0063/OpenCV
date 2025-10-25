@@ -1,7 +1,7 @@
 import cv2
 
 # Читаем изображение
-img = cv2.imread('image.jpg')
+img = cv2.imread('../image.jpg')
 if img is None:
     print("Ошибка загрузки изображения")
     exit()

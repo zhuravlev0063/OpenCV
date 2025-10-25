@@ -1,6 +1,6 @@
 import cv2
 
-cap = cv2.VideoCapture('video1.mp4')
+cap = cv2.VideoCapture('../video1.mp4')
 
 if not cap.isOpened():
     print("Ошибка открытия видео потока")
